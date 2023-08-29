@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function openPopup() {
+            document.getElementById("boxPopup").style.display = "block";
+        }
+
+        function closePopup() {
+            document.getElementById("boxPopup").style.display = "none";
+        }
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function (event) {
+            var modal = document.getElementById('boxPopup');
+            if (event.target == modal) {
+                closePopup();
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <p style="align-content: center">
+        <A style="align-content: center" HREF="newpopup.html" onClick="return popup(this, 'stevie')">my popup</A><br>
+      </p>
+      <p align="center">
+        <input type="button" onclick="popup(this, 'about') " value="CLICK HERE">
+      </p>
+    
+</body>
+</html>
